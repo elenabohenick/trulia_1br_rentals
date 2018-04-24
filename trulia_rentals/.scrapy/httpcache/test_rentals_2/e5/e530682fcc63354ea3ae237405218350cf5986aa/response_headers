@@ -1,0 +1,14 @@
+Content-Type: text/plain
+Date: Thu, 19 Apr 2018 01:33:48 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Last-Modified: Fri, 13 Apr 2018 23:48:54 GMT
+Etag: "5e0-569c383c7c580-gzip"
+Accept-Ranges: bytes
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=604800;
+Set-Cookie: SERVERID=webfe335|Wtfx/; path=/
+Cache-Control: private
+X-Cache: Miss from cloudfront
+Via: 1.1 3ca41706981cad42d8ecaabd29f88efa.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: oK3UCzw6cnTW7Z7gE-xAJT8B3mmxqDQTb1HfOqwH0l5Ob65c2dqwSg==
