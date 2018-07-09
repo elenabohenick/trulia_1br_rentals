@@ -5,9 +5,13 @@ New York has more than 3.5 million apartments in the housing stock. Sixty percen
 
 
 ### Data:
-1. Trulia one-bedroom features.  First, I used *BeatifulSoup* to get individual URLs for one bedroom appartments in New York. Then I collected appartment features using *Scrapy*. Below is an example from appartment features that I collected.
+1. **Trulia one-bedroom features.**  First, I used *BeatifulSoup* to get individual URLs for one bedroom apartments in New York. Then I collected apartment features using *Scrapy*. Below is an example from apartment features that I collected.
 
 <img src="https://github.com/elenabohenick/trulia_1br_rentals/blob/master/trulia_data.png" width="331" height="435" />
+  
+2. Yelp. Number of restaurants within 1 mile of the apartment location scraped from Yelp using *Selenium*.
+3. Income data: Medium Income & Number of High Income Households within the apartment ZIP code scraped from <www.incomebyzipcode.com>
+4. Demographical data from Census. 
 
 
 ### Hypothesis:
