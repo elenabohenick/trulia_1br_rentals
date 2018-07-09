@@ -10,11 +10,22 @@ New York has more than 3.5 million apartments in the housing stock. Sixty percen
 <img src="https://github.com/elenabohenick/trulia_1br_rentals/blob/master/trulia_data.png" width="331" height="435" />
   
 2. Yelp. Number of restaurants within 1 mile of the apartment location scraped from Yelp using *Selenium*.
-3. Income data: Medium Income & Number of High Income Households within the apartment ZIP code scraped from <www.incomebyzipcode.com>
+3. Income data: Medium Income & Percent of High Income Households within the apartment ZIP code scraped from www.incomebyzipcode.com
 4. Demographical data from Census. 
 
+### EDA & Feature Engeneering
 
-### Hypothesis:
+- Trulia dataset required a lot of cleaning and preprocessing: Features describing an apartment needed to be converted to categorial variables. First they needed to be cleaned: there were instances where the same features would be described in different words. I combined those features. Then I identified how many times each feature appeared in the dataset and creeated binary variables out of the top 30 most popular apartment features. 
+- All dataset were merged at a zip code level. Thus demo and income metrics were the same for all the apartments within the same ZIP code which is not ideal, but it was the most granular level that was available. Yelp data however was at an address level. 
+- The dependant varibale is right skewed
+- Based on EDA the following features have moderate positive correlation with the rent price: number of restaurants, median income, and pct of high income households. 
+- Out of all apartment features (binary variables) 'fitness center' has the highest correlation with the 1br apt rent price
+
+
+### Tested Methods and Models
+Response variable is apartment price, which is a continuous variable and requires a use of a Linear Regression Model.
+
+
 
 
 
