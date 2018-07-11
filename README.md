@@ -15,15 +15,18 @@ New York has more than 3.5 million apartments in the housing stock. Sixty percen
 
 ### EDA & Feature Engeneering
 
-- Trulia dataset required a lot of cleaning and preprocessing: Features describing an apartment needed to be converted to categorial variables. First they needed to be cleaned: there were instances where the same features would be described in different words. I combined those features. Then I identified how many times each feature appeared in the dataset and creeated binary variables out of the top 30 most popular apartment features. 
-- All dataset were merged at a zip code level. Thus demo and income metrics were the same for all the apartments within the same ZIP code which is not ideal, but it was the most granular level that was available. Yelp data however was at an address level. 
-- The dependant varibale is right skewed
-- Based on EDA the following features have moderate positive correlation with the rent price: number of restaurants, median income, and pct of high income households. 
-- Out of all apartment features (binary variables) 'fitness center' has the highest correlation with the 1br apt rent price
-
+-	Trulia dataset required a lot of cleaning and preprocessing: Features describing an apartment needed to be converted to categorical variables. First they needed to be cleaned: there were instances where the same features would be described in different words. I combined those features. Then I identified how many times each feature appeared in the dataset and created binary variables out of the top 30 most popular apartment features.
+-	All datasets were merged at a zip code level. Thus demo and income metrics were the same for all the apartments within the same ZIP code which is not ideal, but it was the most granular level that was available. Yelp data however was at an address level.
+-	The dependent variable is right skewed
+-	Based on EDA the following features have moderate positive correlation with the rent price: number of restaurants, median income, and pct of high income households.
+-	Out of all apartment features (binary variables) 'fitness center' has the highest correlation with the 1br apt rent price
 
 ### Tested Methods and Models
 Response variable is apartment price, which is a continuous variable and requires a use of a Linear Regression Model.
+- I tested Statsmodels first. I created feature matrix (X) and target vector (y) using patsy.dmatrices. Then ran OLS model and got an R-sqr of ~58% on my test set. 
+
+
+TO BE CONTINUED
 
 
 
